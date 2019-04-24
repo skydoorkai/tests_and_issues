@@ -1,0 +1,6 @@
+FROM tensorflow/tensorflow:2.0.0a0-gpu-py3
+
+COPY network.py /usr/local/lib/python3.5/dist-packages/tensorflow/python/keras/engine/network.py
+COPY example.py /example.py
+
+CMD ["python", "/example.py"]
